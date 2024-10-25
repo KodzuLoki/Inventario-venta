@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.EditTrabajadorController" spacing="10" alignment="center">
+    <Label text="Editar Trabajador" />
+
+    <HBox spacing="10">
+        <Label text="Nombre:" />
+        <TextField fx:id="nombreTextField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Puesto:" />
+        <TextField fx:id="puestoTextField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Salario:" />
+        <TextField fx:id="salarioTextField" />
+    </HBox>
+
+    <Button text="Guardar Cambios" onAction="#handleSaveTrabajador" />
+    <Button text="Cancelar" onAction="#handleCancel" />
+</VBox>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.miempresa.miproyecto.VentaController" spacing="10" alignment="center" prefWidth="400">
+    <Label fx:id="usuarioLabel"/>
+    <Label fx:id="sucursalLabel"/>
+
+    <ListView fx:id="itemsListView" prefHeight="150" prefWidth="200"/>
+    <Button text="Agregar Item" fx:id="agregarButton"/>
+
+    <TextArea fx:id="boletaTextArea" prefHeight="200" prefWidth="300"/>
+    <Button text="Cerrar Venta" fx:id="cerrarVentaButton"/>
+</VBox>

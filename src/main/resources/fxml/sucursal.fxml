@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.SucursalController" spacing="10" alignment="center">
+    <TextField fx:id="idField" promptText="ID"/>
+    <TextField fx:id="nombreField" promptText="Nombre"/>
+    <TextField fx:id="direccionField" promptText="Dirección"/>
+
+    <ListView fx:id="sucursalListView" />
+
+    <Button text="Agregar Sucursal" onAction="#handleAddSucursal"/>
+    <Button text="Editar Sucursal" onAction="#handleEditSucursal"/>
+    <Button text="Eliminar Sucursal" onAction="#handleDeleteSucursal"/>
+    <Button text="Volver a Admin" onAction="#handleBackToAdmin"/>
+</VBox>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.ItemController" spacing="10" alignment="center">
+    <TableView fx:id="itemTable">
+        <columns>
+            <TableColumn text="Nombre" fx:id="nombreColumn"/>
+            <TableColumn text="Descripción" fx:id="descripcionColumn"/>
+            <TableColumn text="Precio" fx:id="precioColumn"/>
+            <TableColumn text="Stock" fx:id="stockColumn"/>
+        </columns>
+    </TableView>
+    <Button text="Agregar Ítem" onAction="#handleAddItem"/>
+    <Button text="Editar Ítem" onAction="#handleEditItem"/>
+    <Button text="Eliminar Ítem" onAction="#handleDeleteItem"/>
+    <Button text="Volver a Admin" onAction="#handleBackToAdmin"/>
+</VBox>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.TrabajadorController" spacing="10" alignment="center">
+
+    <TableView fx:id="trabajadorTable">
+        <columns>
+            <TableColumn text="Nombre" fx:id="nombreColumn"/>
+            <TableColumn text="Rol" fx:id="rolColumn"/>
+            <TableColumn text="Puesto" fx:id="puestoColumn"/>
+            <TableColumn text="Celular" fx:id="celularColumn"/>
+            <TableColumn text="Correo" fx:id="correoColumn"/>
+        </columns>
+    </TableView>
+    <Button text="Agregar Trabajador" onAction="#handleAddTrabajador"/>
+    <Button text="Editar Trabajador" onAction="#handleEditTrabajador"/>
+    <Button text="Eliminar Trabajador" onAction="#handleDeleteTrabajador"/>
+    <Button text="Volver a Admin" onAction="#handleBackToAdmin"/>
+
+</VBox>

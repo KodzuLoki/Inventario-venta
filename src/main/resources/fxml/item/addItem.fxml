@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.AddItemController" spacing="10" alignment="center">
+    <Label text="Agregar Ítem" />
+
+    <HBox spacing="10">
+        <Label text="Nombre:" />
+        <TextField fx:id="nombreTextField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Descripción:" />
+        <TextField fx:id="descripcionTextField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Precio:" />
+        <TextField fx:id="precioTextField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Stock:" />
+        <TextField fx:id="stockTextField" />
+    </HBox>
+
+    <Button text="Guardar" onAction="#handleSaveItem" />
+    <Button text="Cancelar" onAction="#handleCancel" />
+</VBox>

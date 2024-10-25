@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.EditSucursalController" spacing="10" alignment="center">
+    <Label text="Editar Sucursal" />
+
+    <HBox spacing="10">
+        <Label text="Nombre:" />
+        <TextField fx:id="nombreTextField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Dirección:" />
+        <TextField fx:id="direccionTextField" />
+    </HBox>
+
+    <Button text="Guardar Cambios" onAction="#handleSaveSucursal" />
+    <Button text="Cancelar" onAction="#handleCancel" />
+</VBox>

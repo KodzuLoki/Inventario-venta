@@ -1,0 +1,44 @@
+/* estilo.css */
+
+.border-pane {
+    -fx-background-color: #f8f9fa; /* Color de fondo suave */
+}
+
+/* Añadido para aplicar padding general a todos los elementos */
+* {
+    -fx-padding: 10; /* Espaciado interno general */
+}
+
+.grid-pane {
+    -fx-padding: 20; /* Espaciado interno específico */
+    -fx-background-color: white; /* Fondo blanco para el formulario */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 0); /* Sombra suave */
+    -fx-border-radius: 8; /* Bordes redondeados */
+}
+
+.label {
+    -fx-font-size: 14px; /* Tamaño de fuente de las etiquetas */
+}
+
+.button {
+    -fx-background-color: #28a745; /* Color verde */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+    -fx-padding: 10 20; /* Espaciado interno */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.0, 0, 1); /* Sombra suave */
+    -fx-margin: 20 0 0 0; /* Espacio superior */
+}
+
+.text-field, .password-field {
+    -fx-border-color: #ced4da; /* Color del borde */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-padding: 5px; /* Espaciado interno */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+    -fx-margin: 0 0 10 0; /* Margen inferior */
+}
+
+.text-field:focus, .password-field:focus {
+    -fx-border-color: #28a745; /* Color del borde al enfocarse */
+    -fx-background-color: #f0f8ff; /* Color de fondo suave al enfocarse */
+}

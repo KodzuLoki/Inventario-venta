@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.LoginController">
+    <center>
+        <GridPane alignment="center" hgap="10" vgap="10" styleClass="grid-pane">
+            <Label text="Usuario:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="usuarioField" promptText="Ingrese su usuario" styleClass="text-field" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Contraseña:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <PasswordField fx:id="passwordField" promptText="Ingrese su contraseña" styleClass="password-field" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <!-- Añadimos un espaciador -->
+            <Region GridPane.rowIndex="2"/> <!-- Espaciador -->
+
+            <Button fx:id="loginButton" text="Iniciar Sesión" styleClass="button" GridPane.rowIndex="3" GridPane.columnSpan="2" />
+        </GridPane>
+    </center>
+    <padding>
+        <Insets top="50" right="50" bottom="50" left="50"/> <!-- Añade un padding alrededor de la interfaz -->
+    </padding>
+</BorderPane>

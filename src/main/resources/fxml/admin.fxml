@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.AdminController" spacing="10" alignment="center">
+    <Label fx:id="welcomeLabel" text="Panel de Administrador" style="-fx-font-size: 20px;"/>
+    <Button text="Gestión de Trabajadores" onAction="#showTrabajadores"/>
+    <Button text="Gestión de Sucursales" onAction="#showSucursales"/>
+    <Button text="Gestión de Ítems" onAction="#showItems"/>
+    <Button text="Ir a Selección de Sucursal" onAction="#showSucursalScreen"/>
+</VBox>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.miempresa.miproyecto.controller.SelectSucursalController" spacing="10" alignment="center">
+    <Label text="Seleccione una Sucursal" />
+    <ListView fx:id="sucursalListView" />
+    <Button text="Seleccionar" onAction="#handleSucursalSeleccionada" />
+    <Button text="Volver" onAction="#handleBackToAdmin" />
+</VBox>
